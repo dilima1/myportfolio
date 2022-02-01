@@ -1140,10 +1140,10 @@ footer a {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     transform: translateY(-50px);
-    transition: .3s ease;
+    transition: 0.3s ease;
   }
 
-  .navigation.active .nav-items{
+  .navigation.active .nav-items {
     transform: translateY(0);
   }
 
@@ -1166,13 +1166,154 @@ footer a {
   }
 
   /*==========HomeSection=============*/
-  .home .home-container .info{
+  .home .home-container .info {
     font-size: 0.85rem;
   }
 
-  .about .container .content{
+  .about .container .content {
     display: grid;
     width: 100%;
     row-gap: 20px;
   }
+
+  .about-img img {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .about-info {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .about-info .professional-list {
+    flex-direction: column;
+  }
+
+  .about-info .professional-list .list-item {
+    justify-content: start;
+  }
+
+  /*=========Get-in-Touch*/
+  .get-in-touch .contact-card {
+    display: grid;
+    width: 100%;
+  }
+
+  .contact-card .title {
+    font-size: 0.8rem;
+    line-height: 50px;
+  }
+
+  .client-swiper .swiper-slide {
+    flex-direction: column;
+  }
+
+  .client-details {
+    text-align: center;
+  }
+
+  /*=========Seção Contatos============*/
+  .contact .content {
+    flex-direction: column;
+    font-size: 0.9em;
+  }
+
+  .contact .contact-left {
+    margin-bottom: 40px;
+  }
+
+  .contact-form .second-row {
+    flex-direction: column;
+  }
+
+  .contact-form .second-row input {
+    width: 100%;
+  }
+
+  /*======footer==========*/
+
+  footer .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container .about,
+  .footer-container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .footer-container .info ul {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-container .info ul li {
+    margin: 5px 0;
+  }
+
+  .footer-container .hr {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0 22px;
+  }
+}
+
+/*=============Media Query 730px==========*/
+@media screen and (max-width: 730px) {
+  /*=========Common Styles for all section*/
+  body {
+  margin: 5rem 0 0 0;
+  }
+
+  .section-title-01{
+    font-size: 2.4em;
+  }
+
+  .section-title-02{
+    font-size: 2em;
+    transform: translateY(-65px);
+  }
+
+  /*========home section============*/
+  .home .home-container{
+    display: grid;
+  }
+
+  .home-container .home-img{
+    position: absolute;
+  }
+
+  .home-container .home-img img{
+    width: 65%;
+    transform: translate(80px, -180px);
+  }
+
+  .home .home-container .info{
+    font-size: 0.8rem;
+  }
+
+  .media-icons{
+    margin-bottom: 80px;
+  }
+
+  /*=====Get in touch section======*/
+  .get-in-touch .contact-card{
+    display: grid;
+  }
+
+  .contact-card .title{
+    font-size: 0.6rem;
+    line-height: 40px;
+  }
+
+  .contact-card .contact-btn .btn{
+    font-size: 0.8rem;
+  }
+
+
 }
